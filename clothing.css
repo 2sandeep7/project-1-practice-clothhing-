@@ -1,0 +1,413 @@
+html{
+    font-size: 62%;
+}
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo img{
+    height: 25rem;
+    border-radius: 12rem;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 2rem;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color:#000000;
+    font-weight:bold;
+    display: block;
+    padding: 2rem;
+}
+nav ul li a:hover{
+    background-color:rgb(180, 41, 208);
+    color:white;
+    padding: 2rem;
+}
+.search-bar{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.search{
+    width: 100%;
+    max-width: 70rem;
+    background-color: rgb(195, 142, 244);
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+}
+.search input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 2.4rem 2rem;
+    font-size: 2rem;
+}
+::placeholder{
+    color:rgb(25, 25, 25);
+}
+.search button img{
+    width: 3rem;
+}
+.search button{
+    border-radius:50%;
+    border: 0;
+    width: 6rem;
+    height: 6rem;
+    background-color: rgb(195, 142, 244);
+    cursor: pointer;
+}
+.container{
+    max-width: 130rem;
+    margin: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.row{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.col-2{
+    flex-basis:50%;
+    max-width: 50rem;
+}
+.col-2 h1{
+    font-size: 3.5rem;
+    padding-bottom: 1.5rem;
+}
+.col-2 p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 5rem 0;    
+    border-radius: 20rem;
+}
+.scout{
+    display:inline-block;
+    background: rgb(133, 39, 241);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-decoration: none;
+    margin: 3rem 0 ;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    text-shadow: 0.2rem 0.2rem 0.4rem #000000;
+    transition:background 0.5sec; 
+}
+.scout:hover{
+    background-color: rgb(72, 21, 87);
+}
+.header{
+    background:url('logos,images/bg.jpg');
+    background-repeat: none;
+    background-size: cover;
+}
+.header .row{
+    margin-top: 7rem;
+}
+.product{
+    margin:7rem ;
+}
+.col-3{
+    flex-basis: 25%;
+    min-width: 15rem;
+    margin-bottom: 3rem;
+    transition: transform 0.5sec;
+}
+.col-3 img{
+    width: 100%;
+    padding: 3rem;
+}
+.small-container{
+    max-width: 100rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin:auto;
+}
+.tittle{
+    text-align: center;
+    font-weight: bolder;
+    padding: 2rem;
+    margin: 0 auto 8rem;
+    position: relative;
+    color: #000000;
+}
+.tittle::after{
+    content: '';
+    background: rgb(149, 7, 200);
+    height: 0.5rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.col-3 h2{
+    color: rgb(179, 19, 8);
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+.col-3 h3{
+    font-size: small;
+}
+.rating {
+    color: rgb(220, 144, 3);
+}
+.col-3:hover{
+    transform: translateY(-0.5rem);
+}
+/* offers */
+.buy-now{
+    display:inline-block;
+    background: rgb(12, 140, 226);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-decoration: none;
+    margin: 3rem 0 ;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    text-shadow: 0.2rem 0.2rem 0.4rem #000000;
+    transition:background 0.5sec; 
+}
+.buy-now:hover{
+    background-color: blue;
+}
+.boat-img{
+    height: 40rem;
+}
+.offer{
+    background-image: url('logos,images/offerbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ /* Brands */
+ .brands{
+    margin: 10rem auto;
+ }
+ .col-5{
+    width: 16rem;
+ }
+.col-5 img {
+    width: 100%;
+}
+/* footer */
+.footer{
+    background-color:rgb(28, 27, 27) ;
+    color: white;
+    font-size: 1.4rem;
+    padding: 3rem 0 2rem;
+}
+.footer p{
+    color: rgb(203, 205, 207);
+}
+.footer h2{
+    margin-bottom: 1rem;
+    font-weight:bolder;
+}
+.footer-col-1,.footer-col-2,.footer-col-3{
+    min-width: 20rem;
+    margin-bottom: 1.5rem;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+    list-style-type: none;
+}
+.footer-col-3{
+    width: 17rem;
+    margin-bottom: 1.5rem;
+}
+.footer-col-2 ul{
+    list-style-type: none;
+}
+.footer-col-3 ul{
+    list-style-type: none;
+}
+.footer-col-2 ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.footer-col-3 ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.footer-col-2 ul a:hover{
+    text-decoration:underline;
+    color: yellowgreen;
+}
+.footer-col-3 ul a:hover{
+    text-decoration:underline;
+    color: yellowgreen;
+}
+.android{
+    padding: 1rem;
+    padding-right: 3rem;
+}
+.android i{
+    padding: 1rem;
+}
+.android a i{
+    color: white;
+}
+.android a:hover{
+    background-color:rgb(186, 12, 229);
+    border-radius: 2rem;
+}
+.footer hr{
+    background-color: aliceblue;
+    height: .2rem;
+    margin: 1rem 0;
+    border: none;
+}
+.copyright{
+    text-align: center;
+    font-size: 1.5rem;   
+}
+@media screen and  (max-width:600px){
+    .logo img{
+        height: 13rem;
+        border-radius: 12rem;
+    }
+    nav ul li{
+        display: inline-block;
+        margin-right: 1.5rem;
+        padding: 0.5rem;
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-size: 2rem;
+        color:#000000;
+        font-weight:bold;
+        display: block;
+        padding: 1rem;
+    }
+    .search{
+        width: 100%;
+        max-width: 40rem;
+        background-color: rgb(195, 142, 244);
+        display: flex;
+        align-items: center;
+        border-radius: 5rem;
+        padding: 1rem 1rem;
+    }
+    .search-bar{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+    .search input{
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 2rem 2rem;
+        font-size: 1.5rem;
+    }
+    .col-2 h1{
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+    }
+    .scout{
+        display:inline-block;
+        background: rgb(133, 39, 241);
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        text-decoration: none;
+        margin: 3rem  0 ;
+        padding: 1.5rem ;
+        border-radius: 5rem;
+        font-size: 1.5rem;
+        text-shadow: 0.2rem 0.2rem 0.4rem #000000;
+        transition:background 0.5sec; 
+    }
+    .col-3 img{
+        width: 100%;
+        padding: 1rem;
+    }
+    .boat-img{
+        height: 24rem;
+    }
+    .offer .small-container .col-2 h1{
+        font-size: 1.5rem;
+        padding-top: 3rem;
+    }
+    .offer .small-container .col-2 p{
+        font-size: 1.2rem;
+    }
+    .buy-now{
+        display:inline-block;
+        background: rgb(12, 140, 226);
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        text-decoration: none;
+        margin: 3rem 0 ;
+        padding:  1rem;
+        border-radius: 5rem;
+        font-size: 1rem;
+        text-shadow: 0.2rem 0.2rem 0.4rem #000000;
+        transition:background 0.5sec; 
+    }
+    .brands{
+        margin: 8rem auto;
+     }
+     .col-5{
+        width: 14rem;
+     }
+    .col-5 img {
+        width: 100%;
+        padding-left: 2.4rem;
+    }
+    .footer{
+        background-color:rgb(28, 27, 27) ;
+        color: white;
+        font-size: 1.3rem;
+        padding: 2rem 0 1rem;
+    }
+    .footer-col-1,.footer-col-2,.footer-col-3{
+        min-width: 15rem;
+        margin-bottom: 1rem;
+    }
+    .footer-col-3{
+        padding-left: 6rem;
+    }
+}
+    

@@ -1,0 +1,91 @@
+ 
+html{
+    font-size: 62%;
+}
+.col-2s{
+    flex-basis: 30%;
+    min-width: 15rem;
+    margin-bottom: 2rem;
+    transition: transform 0.5sec;
+    text-align: center;
+    margin: 7rem;
+}
+.col-2s img{
+    max-width: 100%;
+}
+.small-container{
+    max-width: 100rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin:auto;
+}
+.col-2s:hover{
+    transform: translateY(-0.5rem);
+}
+.col-2s h1{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.col-2s img{
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+}
+.row-2{
+    justify-content: space-between;
+    margin: 10rem;
+}
+.row-2 h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+select{
+    border: 0.3rem solid rgb(96, 6, 119);
+    padding: 0.6rem;
+    font-size: 1.5rem;
+    border-radius: 0.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+select:focus{
+    outline: none;
+}
+.page-btn{
+    margin: 1rem auto 7rem;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+}
+.page-btn span{
+    font-size: 1.7rem;
+    display: inline-block;
+    margin-left: 1rem;
+    border: 0.2rem solid purple;
+    border-radius: 5rem;
+    font-weight: bold;
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    cursor: pointer;
+
+}
+.page-btn span:hover{
+    background-color: rgb(178, 104, 247);
+    color:white;
+}
+@media screen and  (max-width:600px){
+
+    .small-container{
+        max-width: 100rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+     
+        margin:auto;
+    }
+    .row-2 h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 2.5rem;
+       padding: 1rem;
+    }
+}

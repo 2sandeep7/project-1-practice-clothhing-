@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clothing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=Noto+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="stuffs.css">
+    <link rel="stylesheet" href="account.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logos,images/coolstuff.jpg" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="clothing.html">Home</a></li>
+                        <li><a href="stuffs.html">Stuffs</a></li>
+                        <li><a href="nikeera.html">Nike Era</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                        <a href="" class="cart"></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- account login -->
+    <div class="acc-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="bg walpaper/acc-bg-wallpaper.jpg" alt="">
+                </div>
+                <div class="col-2">
+                    <div class="acc-container">
+                        <div class="acc-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="reg()"> Register</span>
+                            <hr id="info">
+                        </div>
+                        <div class="qoute">
+                            We Are Blessed😇 To Have You!
+                        </div>
+                        <form id="login-form">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <div class="lgn-btn"><button type="submit" class="btn">Login</button></div>
+                            <a href="">Forget Password</a>
+                        </form>
+                        <form id="reg-form">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h2>Download Our style <b style="color: blueviolet;">A</b>pp<div class="android"><a href=""><i
+                                    class="fa-brands fa-android"> </a></i> <a href=""><i
+                                    class="fa-brands fa-app-store-ios"></i></a></div>
+                    </h2>
+                    <p>Our app is Available For Android And As Well IOS</p>
+                </div>
+                <div class="footer-col-2">
+                    <h2>Use Full Links</h2>
+                    <ul>
+                        <li><a href="#">Coupons</a></li>
+                        <li><a href="#">Blog Post</a></li>
+                        <li><a href="#">Replace & Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li><a href="#">Facebook</a>
+                        <li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - Coolstuff</p>
+
+        </div>
+        <!-- js for account page -->
+        <script>
+            var loginform = document.getElementById("login-form");
+            var regform = document.getElementById("reg-form");
+            var info = document.getElementById("info");
+
+            function reg() {
+
+                regform.style.transform = "translateX(0rem)";
+                loginform.style.transform = "translateX(0rem)";
+                info.style.transform = "translateX(10rem)";
+
+            }
+            function login() {
+
+                regform.style.transform = "translateX(30rem)";
+                loginform.style.transform = "translateX(30rem)";
+                info.style.transform = "translateX(0rem)";
+
+            }
+        </script>
+</body>
+
+</html>

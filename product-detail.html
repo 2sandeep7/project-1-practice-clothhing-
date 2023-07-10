@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clothing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=Noto+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="stuffs.css">
+    <style>
+        .big-col-2 {
+            flex-basis: 50%;
+            max-width: 50rem;
+        }
+
+        .big-col-2 h1 {
+            font-size: 3.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .big-col-2 p {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .big-col-2 img {
+            max-width: 100%;
+            padding: 5rem 0;
+        }
+
+        .single-product {
+            margin-top: 7rem;
+        }
+
+        .single-product .big-col-2 img {
+            padding: 0;
+
+        }
+
+        .single-product .big-col-2 {
+            padding: 2rem;
+        }
+
+        .single-product h2 {
+            margin: 2rem 0;
+            font-size: 2.1rem;
+            font-weight: bold;
+
+        }
+
+        .single-product h1 {
+            margin-top: 2rem;
+        }
+
+        .big-col-2 select {
+            padding: 1rem;
+            margin-top: 3rem;
+            display: block;
+        }
+
+        .single-product input {
+            width: 6rem;
+            height: 3rem;
+            padding-left: 1rem;
+            font-size: 2rem;
+            margin-right: 1rem;
+            border: 0.3rem solid rgb(96, 6, 119);
+            margin-top: 1.5rem;
+            font-weight: bold;
+            border-radius: 0.6rem;
+        }
+
+        .single-product input:focus {
+            outline: none;
+
+        }
+
+        .single-product a {
+            background-color: rgb(84, 12, 155);
+            padding: 0.9rem;
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 3rem;
+            text-align: center;
+        }
+
+        .single-product a:hover {
+            background-color: rgb(31, 2, 54);
+            color: white;
+        }
+
+        .btn {
+            padding-left: 0;
+            margin: 3rem;
+            margin-left: 0;
+        }
+
+        .fa {
+            color: rgb(81, 5, 152);
+            margin-left: 1rem;
+        }
+
+        .small-col-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .small-col {
+            flex-basis: 32%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logos,images/coolstuff.jpg" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="clothing.html">Home</a></li>
+                        <li><a href="stuffs.html">Stuffs</a></li>
+                        <li><a href="nikeera.html">Nike Era</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Account</a></li>
+                        <a href="" class="cart"></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- product detail -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="big-col-2">
+                <img src="logos,images/big-img.jpg" alt="" id="ProductImg">
+
+                <div class="small-col-row">
+                    <div class="small-col">
+                        <img src="logos,images/small-product-img.jpg" class="small-img" alt="">
+                    </div>
+                    <div class="small-col">
+                        <img src="logos,images/small-product-img2.jpg" alt="" class="small-img">
+                    </div>
+                    <div class="small-col">
+                        <img src="logos,images/small-product3-img.jpg" alt="" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="big-col-2">
+                <p>Home / Jacket</p>
+                <h1>Coolstuff M65 Line Hooded Olive Green Jacket By Superdry</h1>
+                <h2>Rs.6,504</h2>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" value="1">
+                <div class="btn"><a href="">Add To Cart</a></div>
+                <h2>Product Details <i class="fa fa-indent"></i></h2>
+                <p>Add Some Coolness This Winter In Your Wardrobe With This Olive Green Jacket By Superdry.
+                    Don't Worry Its Hot🔥 From Inside.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="small-container">
+        <div class="row row-2">
+            <h1>Products</h1>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort By Rating</option>
+                <option>Sort By Price</option>
+                <option>Sort By Sales</option>
+            </select>
+        </div>
+        <hr>
+    </div>
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="logos,images/jeans1.jpg" alt="">
+                <b>
+
+                    <h2>Blue Denim Jeans</h2>
+                </b>
+                <h3>Rs.1,199</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="logos,images/jacket.jpg" alt="">
+                <b>
+                    <h2>Green Jacket</h2>
+                </b>
+                <h3>Rs.1,499</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="logos,images/shirt4.jpg" alt="">
+                <b>
+                    <h2>Checked Shirt </h2>
+                </b>
+                <h3>Rs.999</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="logos,images/tshirt.jpg" alt="">
+                <b>
+                    <h2>Green With White Strips T-Shirt</h2>
+                </b>
+                <h3>Rs.399</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h2>Download Our style <b style="color: blueviolet;">A</b>pp<div class="android"><a href=""><i
+                                    class="fa-brands fa-android"> </a></i> <a href=""><i
+                                    class="fa-brands fa-app-store-ios"></i></a></div>
+                    </h2>
+                    <p>Our app is Available For Android And As Well IOS</p>
+                </div>
+                <div class="footer-col-2">
+                    <h2>Use Full Links</h2>
+                    <ul>
+                        <li><a href="#">Coupons</a></li>
+                        <li><a href="#">Blog Post</a></li>
+                        <li><a href="#">Replace & Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li><a href="#">Facebook</a>
+                        <li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - Coolstuff</p>
+
+        </div>
+        <!-- js for Product Details -->
+        <script>
+            var ProductImg = document.getElementById("ProductImg");
+            var SmallImg = document.getElementsByClassName("small-img");
+            SmallImg[0].onclick = function () {
+                ProductImg.src = SmallImg[0].src;
+            }
+            SmallImg[1].onclick = function () {
+                ProductImg.src = SmallImg[1].src;
+            }
+            SmallImg[2].onclick = function () {
+                ProductImg.src = SmallImg[2].src;
+            }
+        </script>
+
+</body>
+
+</html>
